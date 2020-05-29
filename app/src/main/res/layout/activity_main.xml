@@ -18,23 +18,26 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/start_pause"
+        android:id="@+id/play_pause"
         android:layout_width="75sp"
         android:layout_height="75sp"
         android:background="@drawable/round_button"
-        android:src="@drawable/ic_play_arrow_white_50dp"
+        android:src="@drawable/ic_play_arrow_white_35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chronometer"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/todo" />
 
     <ImageButton
+        android:id="@+id/reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_refresh_black_40dp"
+        android:src="@drawable/ic_refresh_black_35dp"
         android:layout_margin="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="@android:color/transparent"/>
+        android:backgroundTint="@android:color/transparent"
+        android:visibility="invisible"
+        android:contentDescription="@string/todo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
